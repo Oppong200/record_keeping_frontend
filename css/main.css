@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #f2f2f2;
+    position: absolute;
+    /* overflow-x: hidden; */
+}
+.aside{
+    width: 20%;
+    height: 100vh;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid #cccccc;
+    position: fixed;
+}
+.logo{
+    text-align: center;
+    color: #16a34a;
+    width: 100%;
+    border-bottom: 2px solid #cccccc;
+    font-size: 1.5em;
+    padding: 5% 0;
+}
+.logo span{
+    font-weight: bolder;
+    font-style: italic;
+}
+.books{
+    margin-top: 15%;
+    width: 100%;
+    height: 30%;
+}
+.book{
+    display: flex;
+    align-items: center;
+    background-color: #c6f6a8;
+    width: 89%;
+    height: 9%;
+    color: #16a34a;
+    padding: 5%;
+    border-left: 3px solid #16a34a;
+    margin-bottom: 2px;
+}
+.create-book{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+}
+.create-book button{
+    border: none;
+    height: 100%;
+    width: 100%;
+    background: none;
+    font-size: 130%;
+    color: #16a34a;
+}
+.create-book button:hover{
+    transition: all 0.3s ease;
+    background-color: #16a34a;
+    color: #f3f3f3;
+}
+.profile{
+    width: 70%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 1px 1px 12px 1px #ccc;
+    padding: 15% 3%;
+    border-radius: 10px;
+    margin-top: 60%;
+}
+.profile img{
+    width: 50px;
+    border-radius: 50%;
+}
+.profile .arrow{
+    width: 30px;
+}
+.main{
+    padding: 1% 5% 0 5%;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    overflow-y: scroll;
+    margin-left: 18%;
+}
+.fixed{
+    position: fixed;
+    width: 75%;
+    background-color: #f2f2f2;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -1%;
+}
+.input img{
+    width: 20px;
+    padding-right: 2%;
+}
+.input{
+    display: flex;
+    gap: 2%;
+    border: 1px solid rgb(66, 66, 66);
+    height: 2.5vh;
+    width: 28%;
+    padding: 1%;
+    border-radius: 5px;
+}
+.input input{
+    background:none;
+    border: none;
+    font-size: 1.1em;
+}
+.input input:focus{
+    outline: none;
+    width: 90%;
+}
+.qrcode{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    background-color: transparent;
+}
+.qrcode a{
+    text-decoration: underline;
+}
+.qrcode img{
+    width: 20px;
+}
+button img{
+    width: 15px;
+}
+.plus{
+    height: 60px;
+    width: 60px;
+    font-size: 40px;
+    border-radius: 50%;
+    background-color: #16a34a;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    color: #fff;
+}
+.plus:hover{
+    transition: all 0.3s;
+    background-color: #5cff98;
+}
+.recs{
+    justify-content: space-between;
+    width: 96%;
+    height: 8vh;
+    background-color: #f5f4dc;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.recede{
+gap: 10%;
+width: 50%;
+}
+.edit-record,.recs,.recede{
+    display: flex;
+    align-items: center;
+}
+.edit-record{
+    justify-content: center;
+}
+.edit-record:hover{
+    transition: all 0.3s ease;
+    color: #f3f3f3;
+    background-color: #333;
+}
+.add-record{
+    background-color: #c6f6ab;
+}
+.add-record:hover{
+    transition: all 0.3s ease;
+    background-color: #16a34a;
+    color: #fff;
+}
+button{
+    width: 50%;
+    height: 5vh;
+    border: none;
+}
+.grid-holder{
+    overflow-y: scroll;
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    justify-content: center;
+    align-items:flex-start;
+    column-gap: 4%;
+    row-gap: 4%;
+    grid-template-columns: auto auto auto;
+    position: relative;
+    top: 20%;
+    z-index: -999;
+}
+.grid-item{
+    object-fit: cover;
+    background-color: #f5f4dc;
+    height: 43vh;
+    margin-bottom: -1%;
+    box-shadow: 2px 2px 13px 1px #e7e7e7;
+}
+.grid-item.g{
+    background-color: #fff;
+}
+.grid-image{
+    position: relative;
+    object-fit: contain;
+    width: 100%;
+}
+.grid-image img{
+    width: 100%;
+}
+.desc-side{
+    padding: 4%;
+}
+.desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.grid-btn{
+    background-color: transparent;
+    border: 2px solid #c6f6a8;
+    color: #16a34a;
+    width: 40%;
+    border-radius: 5px;
+}
+.grid-btn:hover{
+    transition: all 0.3s ease;
+    background-color: #16a34a;
+    color: #fff;
+}
+
+
+button:hover{
+    cursor: pointer;
+}
+.edit-record-b{
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #333;
+}
+.edit-record-b:hover{
+    background-color: #16a34a;
+    color: #c6f6ab;
+}
+.edit-record-b img{
+    width: 20px;
+}
+.modal{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.add_to{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: #000;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    height: 70vh;
+    width: 70vh;
+    background-color: #fff;
+    /* background-image: url('./assets/undraw_farm_girl_dnpe.svg'); */
+    box-shadow: 1px 1px 12px 1px #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 2%;
+    z-index: 20;
+}
+.form input{
+    width: 80%;
+    height: 40px;
+    margin-bottom: 3%;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 20px;
+    border:2px solid rgb(201, 201, 201);
+}
+.form input:focus{
+    outline: none;
+    color: grey;
+}
+.form input::placeholder{
+    font-size: 18px;
+    color: grey;
+}
+.form button{
+    background-color: #16a34a;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 40px;
+    width: 30%;
+}
+
+.form button:hover{
+    transition: all 0.3s ease;
+    background-color: #5cff98;
+    color: #333;
+}
+@media (max-width:992px) {
+    .grid-holder{
+        grid-template-columns: auto auto;
+        row-gap: 4%;
+    }
+    .profile{
+        width: 25%;
+    }
+    .profile .prof{
+        width: 35px;
+    }
+    .profile p{
+        display: none;
+    }
+    .arrow{
+        display: none;
+    }
+}
+@media (max-width:625px) {
+    .grid-holder{
+        grid-template-columns: auto;
+    }
+    .profile{
+        width: 30%;
+        height: 50px;
+    }
+    .profile p{
+        display: none;
+    }
+    .arrow{
+        display: none;
+    }
+    .create-book button{
+        font-size: 90%;
+    }
+    .logo{
+        font-size: 1em;
+    }
+    .form{
+        height: 50vh;
+        width: 50vh;
+    }
+}

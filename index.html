@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Record Keeping App</title>
+</head>
+<body>
+    <!--ASIDE BAR-->
+    <div class="container">
+        <aside class="aside">
+            <div class="logo">Farm<span>Keep</span></div>
+            <div class="books">
+                <div class="book">
+                    <p>Farm 1</p>
+                </div>
+                <div class="book">
+                    <p>Farm 2</p>
+                </div>
+                <div class="book">
+                    <p>Farm 3</p>
+                </div>
+            </div>
+            <div class="create-book"><button type="submit">+ Create book</button></div>
+            <button class="profile">
+                <img src="./assets/profile.png" alt="" class="prof">
+                <p>Kofi Frimpong</p>
+                <img src="./assets/keyboard_arrow_up.png" alt="" class="arrow"/>
+            </button>
+        </aside>
+        <!--MAIN PAGE-->
+        <div class="main">
+            <div class="fixed">
+                <div class="header">
+                    <p>Record book for <span>Farm 1</span></p>
+                    <div class="input">
+                        <img src="./assets/icons8_search_24px_2.png" alt="">
+                        <input type="search" name="" id="" placeholder="Search"/>
+                    </div>
+                </div>
+                <div class="recs">
+                    <button class="qrcode" type="submit">
+                        <a href="">GENERATE QR CODE</a>
+                        <img src="./assets/qr_code_scanner.png" alt="">
+                    </button>
+                    <div class="recede">
+                        <button type="submit" class="edit-record">
+                            <img src="./assets/icons8_pencil_30px.png" alt="">
+                            Edit Record
+                        </button>
+                        <button type="submit" class="add-record">+ Add Record</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-holder">
+                <div class="grid-item">
+                    <div class="grid-image">
+                        <button class="edit-record-b" type="button"><img src="./assets/edit.svg" alt=""></button>
+                        <img src="./assets/groundnut.png" alt="">
+                    </div>
+                    <div class="desc-side">
+                        <div class="desc">
+                            <div class="name">Groundnuts</div>
+                            <button type="submit" class="grid-btn">Harvest</button>
+                        </div>
+                        <p>March 2</p>
+                    </div>
+                </div>
+                <div class="grid-item g">
+                    <div class="grid-image">
+                        <button class="edit-record-b" type="button"><img src="./assets/edit.svg" alt=""></button>
+                        <img src="./assets/farmer.png" alt="">
+                    </div>
+                    <div class="desc-side">
+                        <div class="desc">
+                            <div class="name">Groundnuts</div>
+                            <button type="submit" class="grid-btn">Activity</button>
+                        </div>
+                        <p>March 2</p>
+                    </div>
+                </div>
+                <div class="grid-item g">
+                    <div class="grid-image">
+                        <button class="edit-record-b" type="button"><img src="./assets/edit.svg" alt=""></button>
+                        <img src="./assets/groundnut.png" alt="">
+                    </div>
+                    <div class="desc-side">
+                        <div class="desc">
+                            <div class="name">Groundnuts</div>
+                            <button type="submit" class="grid-btn">Harvest</button>
+                        </div>
+                        <p>March 2</p>
+                    </div>
+                </div>
+                <div class="grid-item g">
+                    <div class="grid-image">
+                        <button class="edit-record-b" type="button"><img src="./assets/edit.svg" alt=""></button>
+                        <img src="./assets/groundnut.png" alt="">
+                    </div>
+                    <div class="desc-side">
+                        <div class="desc">
+                            <div class="name">Groundnuts</div>
+                            <button type="submit" class="grid-btn">Harvest</button>
+                        </div>
+                        <p>March 2</p>
+                    </div>
+                </div>
+                <div class="grid-item g">
+                    <div class="grid-image">
+                        <button class="edit-record-b" type="button"><img src="./assets/edit.svg" alt=""></button>
+                        <img src="./assets/groundnut.png" alt="">
+                    </div>
+                    <div class="desc-side">
+                        <div class="desc">
+                            <div class="name">Groundnuts</div>
+                            <button type="submit" class="grid-btn">Harvest</button>
+                        </div>
+                        <p>March 2</p>
+                    </div>
+                </div>
+                <div class="grid-item g">
+                    <div class="grid-image">
+                        <button class="edit-record-b" type="button"><img src="./assets/edit.svg" alt=""></button>
+                        <img src="./assets/groundnut.png" alt="">
+                    </div>
+                    <div class="desc-side">
+                        <div class="desc">
+                            <div class="name">Groundnuts</div>
+                            <button type="submit" class="grid-btn">Harvest</button>
+                        </div>
+                        <p>March 2</p>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="plus">+</button>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="add_to" id="add_record">
+        </div>
+        <form action="" method="get" class="form">
+            <input type="text" name="" id="" placeholder="Farm Name">
+            <input type="text" name="" id="" placeholder="Plant">
+            <input type="text" name="" id="" placeholder="Activity">
+            <input type="text" name="" id="" placeholder="date">
+            <button type="submit" class="form-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
